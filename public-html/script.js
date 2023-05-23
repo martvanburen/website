@@ -2,7 +2,7 @@
 
 function pauseBackgroundVideo() {
   var video = document.getElementById("background-video");
-  var btn = document.getElementById("pauseButton");
+  var btn = document.getElementById("debug-pause-btn");
 
   if (video.paused) {
     video.play();
