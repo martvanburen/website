@@ -14,6 +14,7 @@ function pauseBackgroundVideo() {
 }
 
 $(document).ready(function() {
+  $('.content').show();
   var video = document.getElementById("backgroundVideo");
   video.play();
 
