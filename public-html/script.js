@@ -1,7 +1,7 @@
 /*global $*/
 
 function pauseBackgroundVideo() {
-  var video = document.getElementById("backgroundVideo");
+  var video = document.getElementById("background-video");
   var btn = document.getElementById("pauseButton");
 
   if (video.paused) {
@@ -15,7 +15,7 @@ function pauseBackgroundVideo() {
 
 $(document).ready(function() {
   $('.content').show();
-  var video = document.getElementById("backgroundVideo");
+  var video = document.getElementById("background-video");
   video.play();
 
   setTimeout(function() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
     video.playbackRate = 0.2;
   }, 5000); */
   setTimeout(function() {
-    $("#backgroundVideo").fadeOut(10000, function(){
+    $("#background-video").fadeOut(10000, function(){
       video.pause();
     });
   }, 35000);

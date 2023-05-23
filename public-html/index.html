@@ -13,7 +13,7 @@
 
 <body>
 
-  <video muted id="backgroundVideo">
+  <video muted autoplay id="background-video">
     <source src="media/Hougang.mp4" type="video/mp4">
     <source src="media/Hougang.webm" type="video/webm">
   </video>
@@ -31,6 +31,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="script.js"></script>
+
+  <!-- Make sure the page can render properly if Javascript is disabled. -->
+  <noscript>
+    <link href="style_nojs.css" rel="stylesheet">
+  </noscript>
 </body>
 
 </html>

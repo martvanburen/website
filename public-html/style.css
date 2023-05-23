@@ -10,7 +10,7 @@ body, html {
   overflow: hidden;
 }
 
-#backgroundVideo {
+#background-video {
   position: fixed;
   left: 50%;
   top: 50%;

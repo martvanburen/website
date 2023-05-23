@@ -1,0 +1,14 @@
+.content {
+  display: block !important;
+  opacity: 1 !important;
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+}
+
+#background-video {
+  filter: blur(10px) brightness(0.5) !important;
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+}
