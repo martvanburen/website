@@ -25,16 +25,18 @@ $(document).ready(function() {
   setTimeout(function() {
     video.playbackRate = 0.5;
   }, 2000);
-  setTimeout(function() {
-    //video.playbackRate = 0.4;
-  }, 3000);
-  setTimeout(function() {
-    //video.playbackRate = 0.3;
-  }, 4000);
-  setTimeout(function() {
-    //video.playbackRate = 0.2;
+  /* setTimeout(function() {
+    video.playbackRate = 0.4;
   }, 5000);
   setTimeout(function() {
-    //video.pause();
-  }, 5500);
+    video.playbackRate = 0.3;
+  }, 4000);
+  setTimeout(function() {
+    video.playbackRate = 0.2;
+  }, 5000); */
+  setTimeout(function() {
+    $("#backgroundVideo").fadeOut(10000, function(){
+      video.pause();
+    });
+  }, 35000);
 });
