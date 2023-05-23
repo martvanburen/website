@@ -2,6 +2,8 @@
 
 Website at: [https://martvanburen.com](https://martvanburen.com).
 
+Drone shots (background video) are taken by me.
+
 ## Testing Locally
 
 Run `start_test_server.sh`:
