@@ -21,6 +21,15 @@ The production website is hosted on AWS S3, served with Amazon CloudFront, with 
 To upload a new version:
 
 ```bash
-aws s3 sync public-html/ s3://your-bucket-name
-aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+aws s3 sync \
+    --delete \
+    --acl public-read \
+    --exclude '*._*' \
+    --exclude '*.DS_Store*' \
+    public-html/ \
+    s3://your-bucket-name
+
+aws cloudfront create-invalidation \
+    --paths "/*" \
+    --distribution-id YOUR_DISTRIBUTION_ID
 ```
