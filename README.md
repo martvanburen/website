@@ -33,3 +33,7 @@ aws cloudfront create-invalidation \
     --paths "/*" \
     --distribution-id YOUR_DISTRIBUTION_ID
 ```
+
+## Heartbeat Monitoring
+
+To ensure website uptime, `heartbeat_monitor.py` runs regularly as a Synthetic Canary on AWS CloudWatch.
