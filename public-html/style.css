@@ -41,7 +41,7 @@ body, html {
   position: relative;
   top: -10%;
 
-  /* Animate in. */
+  /* Animate opacity. */
   opacity: 0;
   transition: opacity 1s ease-out;
   -webkit-transition: opacity 1s ease-out;

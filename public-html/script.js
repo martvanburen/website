@@ -13,8 +13,14 @@ function pauseBackgroundVideo() {
   }
 }
 
+// Start a series of timers to animate in the main content, and blur out + slow
+// down background video (if JS is disabled, this wont run, but content is
+// automatically shown by <noscript> CSS file).
 $(document).ready(function() {
-  $('.content').show();
+  setTimeout(function() {
+    $('.content').show();
+  }, 100);
+
   var video = document.getElementById("background-video");
   video.play();
 
