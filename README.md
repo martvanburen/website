@@ -6,10 +6,10 @@ Drone shots (background video) are taken by me.
 
 ## Testing Locally
 
-Run `start_test_server.sh`:
+Run `run_test_server.sh`:
 
 ```bash
-./start_test_server.sh
+./run_test_server.sh
 ```
 
 This starts an Apache server in a Docker container, serving at `localhost:8080`.
@@ -26,7 +26,7 @@ aws s3 sync \
     --acl public-read \
     --exclude '*._*' \
     --exclude '*.DS_Store*' \
-    public-html/ \
+    public_html/ \
     s3://your-bucket-name
 
 aws cloudfront create-invalidation \
